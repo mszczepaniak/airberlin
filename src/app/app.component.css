@@ -1,0 +1,23 @@
+.air-image {
+  float: right;
+}
+
+.voting-left {
+  float: left;
+}
+
+.sam-image {
+  width: 300px;
+}
+
+.voting-count {
+  color: red;
+}
+
+.voting-header {
+  margin-bottom: 50px;
+}
+
+.voting-button {
+  margin-right: 20px;
+}

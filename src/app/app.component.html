@@ -1,0 +1,34 @@
+<md-toolbar color="warn">
+  <span>save air berlin</span>
+  <span class="example-spacer"></span>
+  <md-icon class="example-icon">favorite</md-icon>
+</md-toolbar>
+
+<div class="air-image">
+  <img src="assets/air.jpg" alt="airberlin">
+</div>
+
+<div class="voting-left">
+  <img src="assets/vote-sam.png" class="sam-image">
+
+  <h2>Votes results:
+    <span class="voting-count">
+      <!-- OUR CONNECTION TO THE STORE SUBSCRIPTION -->
+      {{ votes }}
+    </span>
+  </h2>
+
+  <h3 class="voting-header">Uncle Sam needs you to choose your destiny:</h3>
+
+  <button md-raised-button class="voting-button" color="primary" (click)="increment()">
+    I AM WITH YA ALL, SIGN ME UP!
+  </button>
+
+  <button md-raised-button class="voting-button" color="warn" (click)="decrement()">
+    I AM AGAINST, GO LUFTHANSA!
+  </button>
+
+  <button md-raised-button class="voting-button" (click)="reset()">
+    START OVER
+  </button>
+</div>
